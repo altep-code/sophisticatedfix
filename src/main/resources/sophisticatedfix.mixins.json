@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "fr.altep.sophisticatedfix.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "WoodStorageBlockBaseMixin",
+    "ShulkerBoxBlockMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
