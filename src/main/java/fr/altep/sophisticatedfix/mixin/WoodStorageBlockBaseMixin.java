@@ -35,30 +35,6 @@ public class WoodStorageBlockBaseMixin {
             itemConsumer.accept(WoodStorageBlockItem.setWoodType(new ItemStack((Block)(Object)this), WoodType.WARPED));
         }
 
-
-        //if (!Config.CLIENT_SPEC.isLoaded() || Boolean.TRUE.equals(Config.CLIENT.showSingleWoodVariantOnly.get())) {
-        //    itemConsumer.accept(WoodStorageBlockItem.setWoodType(new ItemStack(this), WoodType.ACACIA));
-        //} else {
-        //    CUSTOM_TEXTURE_WOOD_TYPES.keySet().forEach(woodType -> itemConsumer.accept(WoodStorageBlockItem.setWoodType(new ItemStack(this), woodType)));
-        //}
-
-        //if (isBasicTier() || Boolean.TRUE.equals(!Config.CLIENT_SPEC.isLoaded() || Config.CLIENT.showHigherTierTintedVariants.get())) {
-        //    for (DyeColor color : DyeColor.values()) {
-        //        ItemStack storageStack = new ItemStack(this);
-        //        if (storageStack.getItem() instanceof ITintableBlockItem tintableBlockItem) {
-        //            tintableBlockItem.setMainColor(storageStack, color.getTextureDiffuseColor());
-        //            tintableBlockItem.setAccentColor(storageStack, color.getTextureDiffuseColor());
-        //        }
-        //        itemConsumer.accept(storageStack);
-        //    }
-        //    ItemStack storageStack = new ItemStack(this);
-        //    if (storageStack.getItem() instanceof ITintableBlockItem tintableBlockItem) {
-        //        tintableBlockItem.setMainColor(storageStack, DyeColor.YELLOW.getTextureDiffuseColor());
-        //        tintableBlockItem.setAccentColor(storageStack, DyeColor.LIME.getTextureDiffuseColor());
-        //    }
-        //    itemConsumer.accept(storageStack);
-        //}
-
         ci.cancel();
     }
 }
